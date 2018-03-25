@@ -1,11 +1,18 @@
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #61122f;
+  background: url('../images/rzepak_tlo.png') no-repeat;
+  /*background-color: #61122f;*/
+  background-width: 100%;
+  background-position: center;
   font-family: 'Oxygen', sans-serif;
 }
 
-
+/*#bg_image {
+  background: url('../images/rzepak.JPG') no-repeat;
+  background-height: 100%;
+  width: 100%
+}*/
 
 /** HEADER **/
 #header-nav {
@@ -16,7 +23,7 @@ body {
 
 
 #logo-img {
-  background: url('../images/Logokosciol.png') no-repeat;
+  background: url('../images/Logokosciol_kol.png') no-repeat;
   width: 160px;
   height: 214px;
   margin: 5px 15px 10px 0;
