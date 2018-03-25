@@ -3,16 +3,18 @@ body {
   color: #fff;
   background: url('../images/rzepak_tlo.png') no-repeat;
   /*background-color: #61122f;*/
-  background-width: 100%;
-  background-position: center;
+
+  background-position: top center;
   font-family: 'Oxygen', sans-serif;
 }
 
-/*#bg_image {
-  background: url('../images/rzepak.JPG') no-repeat;
-  background-height: 100%;
-  width: 100%
-}*/
+.bg_container {
+  background-color: #61122f
+}
+
+.navbar-header {
+  margin-left: 15px;
+}
 
 /** HEADER **/
 #header-nav {
@@ -24,8 +26,8 @@ body {
 
 #logo-img {
   background: url('../images/Logokosciol_kol.png') no-repeat;
-  width: 160px;
-  height: 214px;
+  width: 150px;
+  height: 204px;
   margin: 5px 15px 10px 0;
 }
 
@@ -56,8 +58,11 @@ body {
 .navbar-brand p span { 
   vertical-align: middle;
 }
+
+
+
 footer {
-      background-color: #f2f2f2;
+      background-color: #61122f;
       padding: 25px;
     }
 
@@ -71,4 +76,12 @@ footer {
   .carousel-caption {
   display: none; 
   }
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #61122f; 
+}
+
+.navbar-header button.navbar-toggle{
+  clear: both;
 }
