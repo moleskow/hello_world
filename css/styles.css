@@ -16,6 +16,17 @@ body {
   margin-left: 15px;
 }
 
+.navbar-brand {
+  float: left;
+  height: 50px;
+  padding-top: 15px;
+  padding: 15px 15px 15px 15px;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+
+
 /** HEADER **/
 #header-nav {
   background-color: #f6b319;
@@ -25,15 +36,13 @@ body {
 
 
 #logo-img {
-  background: url('../images/Logokosciol_kol.png') no-repeat;
+  background: url('../images/Logokosciol4_big.png') no-repeat;
   width: 150px;
   height: 204px;
   margin: 5px 15px 10px 0;
 }
 
-.navbar-brand {
-  padding-top: 25px;
-}
+
 
 .navbar-brand h1 { 
   font-family: 'Lora', serif;
@@ -44,7 +53,8 @@ body {
   text-shadow: 1px 1px 1px #222;
   margin-top: 0;
   margin-bottom: 0;
-  line-height: .75;
+  line-height: .95;
+  text-align: center;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
@@ -71,12 +81,7 @@ footer {
   min-height: 200px;
 }
 
-    /* Hide the carousel text when the screen is less than 600 pixels wide */
-@media (max-width: 600px) {
-  .carousel-caption {
-  display: none; 
-  }
-}
+
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar{
   border: 1px solid #61122f; 
@@ -85,3 +90,36 @@ footer {
 .navbar-header button.navbar-toggle{
   clear: both;
 }
+
+
+span {
+  margin-right: 15px;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/Logokosciol4_medium.png') no-repeat;
+    width: 100px;
+    height: 133px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
