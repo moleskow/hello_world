@@ -8,8 +8,14 @@ body {
   font-family: 'Oxygen', sans-serif;
 }
 
-.bg_container {
-  background-color: #61122f
+
+.bg_container_1 {
+    background: #000000ed;    
+}
+
+.bg_container_2 {
+    background: #000000ed; /* For browsers that do not support gradients */
+    background: linear-gradient(#000000ed, white); /* Standard syntax (must be last) */
 }
 
 .navbar-header {
@@ -29,7 +35,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  background-color: #f6b319;
+  background-color: transparent;
   border-radius: 0;
   border: 0;
 }
@@ -72,7 +78,7 @@ body {
 
 
 footer {
-      background-color: #61122f;
+      background: linear-gradient(white,#000000ed);
       padding: 25px;
     }
 
@@ -82,24 +88,53 @@ footer {
 }
 
 
-
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
-  border: 1px solid #61122f; 
-}
-
 .navbar-header button.navbar-toggle{
-  clear: both;
+  float: right;
 }
 
 
-span {
-  margin-right: 15px;
+
+span.glyphicon {
+  margin-right: 5px;
+
 }
+
+
+
+
 
 
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
+
+  span.glyphicon {
+  font-size: 1.9em;
+}
+
+ul.nav.navbar-nav.navbar-right {
+  margin-right: 10px;
+}
+  .navbar-default .navbar-nav>li>a {
+    color: #150303;
+    background-color: #757171ab;
+    margin-top: 145px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #d8d0d0;
+    background-color: #100f0f;
+}
+
+
+
+#header-nav {
+  /*background-color: #f6b333;*/
+  background: url('../images/natlo_3.jpg') no-repeat;
+  border-radius: 0;
+  border: 0;
+}
+
 
 }
 
@@ -112,6 +147,29 @@ span {
     height: 133px;
     margin: 5px 5px 5px 0;
   }
+
+#header-nav {
+  /*background-color: #f6b333;*/
+  background: url('../images/natlo_4.jpg') no-repeat;
+  border-radius: 0;
+  border: 0;
+}
+
+ul.nav.navbar-nav.navbar-right {
+  margin-right: 10px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #150303;
+    background-color: #757171ab;
+    margin-top: 90px;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #d8d0d0;
+    background-color: #100f0f;
+}
+
   /* End Header */
 }
 
